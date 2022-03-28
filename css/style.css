@@ -32,6 +32,10 @@ h6,
     color:#F3525A!important;
 }
 
+.slide p{
+    color:#222!important;
+}
+
 .fa-smile:before {
     content: ""!important;
 }
@@ -50,7 +54,7 @@ ul {
   }
 
 .img-responsive{
-  width: 300px;
+  width: 200px;
   height: auto;
 }
 
@@ -64,7 +68,7 @@ ul {
 }
 
 .btn {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Calibri ', sans-serif;
     font-weight: 600;
     transition: .5s;
 }
@@ -116,7 +120,7 @@ ul {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Calibri ', sans-serif;
     padding: 35px 15px;
     font-size: 18px;
     text-transform: uppercase;
