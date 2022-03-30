@@ -252,7 +252,7 @@ Applicants must have a Sponsor who is a Salary Earner (or has a verifiable means
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
+                                <input type="email" name="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
                                 <label for="form-floating-2">Email address</label>
                             </div>
                         </div>
@@ -277,12 +277,14 @@ Applicants must have a Sponsor who is a Salary Earner (or has a verifiable means
                             </div>
                         </div>
 
+
                         <div class="col-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control"  name="sponsor"  id="form-floating-2" placeholder="">
-                                <label for="form-floating-2">Sponsor Name (Specify N/A if you don't require one:</label>
+                                <input type="text" name="sponsor"  class="form-control" id="select" placeholder="John Doe">
+                                <label for="form-floating-4">Sponsor Name (Specify N/A if you don't require one:</label>
                             </div>
                         </div>
+
                         <div class="col-6">
                             <div class="form-floating">
                                 <select name="sponsorearns"  class="form-control" id="select">
