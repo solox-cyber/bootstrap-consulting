@@ -79,6 +79,22 @@
     </div>
     <!-- Page Header End -->
 
+    <?php 
+
+    if (isset($_POST['submit']))
+    { 
+        $name = $_POST['name']; 
+        $email = $_POST['email']; 
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];  
+
+     $from = "From: ". $name . " <" . $email . ">"; 
+    $to = "info@bootstrapconsulting.net";
+    // $to = "damiokuneye@yahoo.com";
+     $subject = "Contact Us"; 
+     $content = "Full Name: " . $name;
+    
+     ?>
 
     <!-- Contact Start -->
     <div class="container-fluid  bg-secondary px-0">
@@ -86,34 +102,44 @@
             <div class="col-lg-9 py-6 px-5">
                 <h1 class="display-5 mb-4">Contact For Any Queries</h1>
                 <center>
-                <form>
+                    
+                    <?php
+                    $success = "<h3>Thank you for contacting Us! Your details have been sent.</h3> <br/>"; 
+                    mail($to,$subject,$content,$from); 
+                   echo $success; } 
+                    else { echo '<p class="error"><strong>Your details have  not been sent<br/>'; 
+                   } 
+                   
+                   ?>
+
+                <form method="POST" action="">
                     <div class="row g-3">
                         <div class="col-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="form-floating-1" placeholder="John Doe">
+                                <input type="text" name="name" class="form-control" id="form-floating-1" placeholder="John Doe">
                                 <label for="form-floating-1">Full Name</label>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
+                                <input type="email" name="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
                                 <label for="form-floating-2">Email address</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="form-floating-3" placeholder="Subject">
+                                <input type="text" name="subject" class="form-control" id="form-floating-3" placeholder="Subject">
                                 <label for="form-floating-3">Subject</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Message" id="form-floating-4" style="height: 150px"></textarea>
+                                <textarea class="form-control" name="message" placeholder="Message" id="form-floating-4" style="height: 150px"></textarea>
                                 <label for="form-floating-4">Message</label>
                               </div>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                            <button class="btn btn-primary w-100 py-3" name="submit" type="submit">Submit</button>
                         </div>
                     </div>
                 </form>
