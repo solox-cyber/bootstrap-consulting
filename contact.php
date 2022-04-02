@@ -59,7 +59,7 @@
                     </div>
                 </div> -->
                 <a href="career.html" class="nav-item nav-link">Careers</a>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
         </div>
     </nav>
@@ -166,7 +166,7 @@
             <div class="col-lg-3 col-md-6">
                 <h3 class="text-white mb-4">Contact Links</h3>
                 <div class="d-flex flex-column justify-content-start">
-                   <a class="text-secondary" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                   <a class="text-secondary" href="contact.php"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
